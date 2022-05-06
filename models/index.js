@@ -10,7 +10,7 @@ User.hasMany(Post, {
 
 // Defining relationship of the Post model to the User, constraint is that a post can belong to one user, not many users
 Post.belongsTo(User, {
-    foreignKey: 'user_id',
+    foreignKey: 'user_id'
 });
 
 // Association between User, Post, and Vote
